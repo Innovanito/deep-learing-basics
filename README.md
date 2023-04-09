@@ -59,3 +59,64 @@ And here is the main concept of Convolution, Pooling and ReLU.
 <img width="1327" alt="yolo4" src="https://user-images.githubusercontent.com/72393144/230752606-602ce166-314f-4fe9-a8a9-29c5b2a09fa4.png">
 
 ## 3. Recurrent Neural Network(RNN)
+### Recurrent Neural Networks (RNNs) are a type of neural network that is specifically designed for processing sequential data. Unlike feedforward neural networks that take a fixed-sized input, RNNs can take an input sequence of any length and process it one element at a time.
+
+#### 1. Natural Language Processing: RNNs are widely used in natural language processing tasks, such as language translation, text classification, and speech recognition. They can model the temporal dependencies in language sequences and generate more accurate and fluent output.
+
+#### 2. Time Series Prediction: RNNs can predict future values in time series data, such as stock prices, weather patterns, or traffic flow. They can capture the underlying patterns and dependencies in the time series data and make accurate predictions.
+
+#### 3. Music Generation: RNNs can generate new music by learning the patterns and structure of existing musical pieces. They can model the temporal dependencies in music and generate new pieces that follow the same structure and style.
+
+## Models for design RNN 
+
+
+LSTM and GRU are both types of recurrent neural networks (RNNs) that are designed to address the issue of vanishing gradients, which can occur when training deep neural networks. Both LSTM and GRU are capable of processing sequences of input data, but they differ in their architecture and the way they handle information over time.
+
+### Long Short-Term Memory (LSTM):
+LSTM is a type of RNN that was specifically designed to capture long-term dependencies in sequential data. The basic idea behind LSTM is to use a memory cell to store information over time, with various gates that control how the memory cell is updated and accessed.
+
+LSTM has three gates:
+
+- Forget Gate: Determines which information to forget from the memory cell.
+- Input Gate: Determines which new information to add to the memory cell.
+- Output Gate: Determines which information to output from the memory cell.
+
+
+The forget gate and input gate allow LSTM to selectively update the memory cell with new information or forget outdated information, while the output gate allows LSTM to selectively output relevant information at each time step.
+
+### Gated Recurrent Unit (GRU):
+GRU is another type of RNN that is similar to LSTM in its ability to capture long-term dependencies. However, GRU has a simpler architecture than LSTM, with fewer gates and no separate memory cell.
+
+GRU has two gates:
+
+- Reset Gate: Determines how much of the past information to forget.
+- Update Gate: Determines how much of the new information to add.
+
+
+The reset gate and update gate allow GRU to selectively update the hidden state at each time step, similar to LSTM's memory cell. However, the simpler architecture of GRU makes it more computationally efficient and easier to train than LSTM.
+
+
+In summary, LSTM and GRU are two types of RNNs that are designed to capture long-term dependencies in sequential data. While LSTM has a more complex architecture with separate memory cell and three gates, GRU has a simpler architecture with fewer gates and no separate memory cell. Both models have proven to be effective for various applications in natural language processing, speech recognition, and time series prediction.
+
+### LSTM vs GRU 
+<img width="1572" alt="LSTM vs GRU" src="https://user-images.githubusercontent.com/72393144/230799256-2d31f1ed-75b6-4b59-808f-5e1db290b854.png">
+
+### The Diagram of LSTM and GRU
+
+<img width="1772" alt="RNN vs LSTM" src="https://user-images.githubusercontent.com/72393144/230799513-eebcdd1d-5710-4384-b160-4a66a9687a51.png">
+
+
+### Here is example of how to translate the languages
+
+<img width="1353" alt="RNN- language translation" src="https://user-images.githubusercontent.com/72393144/230799326-70ebea8e-78e0-4249-9e15-8c2e89f59897.png">
+
+### Here is example of how to make musical note
+
+<img width="1346" alt="RNN to make melody" src="https://user-images.githubusercontent.com/72393144/230799344-03118085-bd5a-4fc3-a779-32ff1a046535.png">
+
+
+### Word Embedding Techniques
+
+<img width="1587" alt="Technique to compute word embedding" src="https://user-images.githubusercontent.com/72393144/230799396-6f113a8d-b5e4-41dc-8f5c-79dfa011bd5a.png">
+
+
